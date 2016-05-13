@@ -10,3 +10,6 @@ deployment:
       - docker build -t chooban/ace-nginx .
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
       - docker push chooban/ace-nginx:latest
+test:
+  override:
+    - echo "test"
